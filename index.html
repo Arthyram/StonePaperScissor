@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link href ="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <p  id = "P1" class= "p1" >Stone Paper Scissor Game</p>
+        <p  id = "P2" class="p1">You Vs Computer <br> 6 points to Win!</p>
+    </div>
+    <div class="container2">
+        <p id="P3" class="p3">Score Board</p>
+        <div class="score_board">
+            <p id="P4" class="score">You</p>
+            <p id="P5" class="score">Comp</p>
+            <p id="P6" class="p6"><span id = "user_score">0</span>:<span id = "comp_score">0</span></p>
+        </div>
+
+    </div>
+    <div class="container3" id="container3">
+        <div class="buttons">
+        <button class="btn" id="Stone" value="Stone" onclick="move('stone')">Stone</button>
+        <button class="btn" id="Paper" value = "Paper" onclick="move('paper')">Paper</button>
+        <button class="btn" id="Scissor" value = "Paper" onclick="move('scissor')">Scissor</button><br>
+        <button class="btn" id="Reset" value = "Reset" onclick="reset()">Reset</button>
+        </div>
+
+        <div class="analysis">
+            <p id="P7" class="p7">User :<span id ="user_move"></span><br><br>Comp :<span id="comp_move"></span></p>
+        </div>
+        
+    </div>
+    <div id="Message" class="message">
+        <p id="msg"></p>
+    </div>
+    <script src="script.js" ></script>
+
+    
+</body>
+</html>
